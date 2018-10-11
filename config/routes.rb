@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   post 'user_token' => 'user_token#create'
   resources :posts
   resources :users
